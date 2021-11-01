@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background: url('pics/underwater.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.fish-container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.fish-container img{
+    height: 100px;
+    position: absolute;
+}
+
+.fish1{
+    top: 33%;
+    left: -10%;
+    transform: translateY(-50%);
+    animation: fishAnimation 10s linear infinite 1s;
+}
+
+.fish2{
+    top: 66%;
+    left: -10%;
+    transform: translateY(-50%);
+    animation: fishAnimation 12s linear infinite 5s;
+}
+
+.fish3{
+    left: -30%;
+    top: 110%;
+    animation: fishAnimation2 16s linear infinite 3s;  
+}
+
+.fish4{
+    top: 44%;
+    left: -5%;
+    transform: translateY(-50%);
+    animation: fishAnimation 10s linear infinite 1.5s;
+}
+
+.smallFish{
+    position: absolute;
+    height: 65px !important;
+    top: 3%;
+    right: -10%;
+    opacity: 0.75;
+    animation: fishAnimation3 30s linear infinite 1.5s;
+}
+
+@keyframes fishAnimation {
+    0% {
+        left: -10%;  
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+@keyframes fishAnimation2{
+    0% {
+        left: -30%;
+        top: 110%;
+    }
+    100% {
+        left: 110%;
+        top: -30%;
+    }
+}
+
+@keyframes fishAnimation3 {
+    0% {
+        right: -10%;  
+    }
+    100% {
+        right: 150%;
+    }
+}
+
+.bubble-container{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+
+.bubble-container img{
+    height: 40px;
+    position: absolute;
+    top: 140px; 
+    transform: translateX(-50%);
+}
+
+.bubble1 {
+    left: 300%;
+    animation: bubbleAnime 42s linear infinite 10ms;   
+}
+
+@keyframes bubbleAnime {
+    0% {
+        left: 1200%;
+        top: 840%;
+        opacity: 5;
+        }   
+     100% {
+         left: 1200%;
+         top: -840%;
+
+     }    
+}
+
+.bubble-container1{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+
+.bubble-container1 img{
+    height: 40px;
+    position: absolute;
+    top: 140px; 
+    transform: translateX(-50%);
+}
+
+.bubble2 {
+    left: 300%;
+    animation: bubbleAnime1 42s linear infinite 10ms;   
+}
+
+
+@keyframes bubbleAnime1 {
+    0% {
+        left: 600%;
+        top: 900%;
+               }   
+     100% {
+         left: 600%;
+         top: -900%;
+
+     }    
+}
+
